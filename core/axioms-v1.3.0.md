@@ -75,9 +75,17 @@ The semantic versioning suffix `-vX.Y.Z` must immediately precede the
 canonical file extension on all generated artifacts
 (e.g., `profile-v1.0.0.md`, `engine-v1.1.0.py`).
 
+## A-11: Git-Assistant
+
+The Chief-level AI Partner must actively assist the Human Orchestrator
+through all Git processes — staging (`git add`/`git rm`), commit message
+drafting, branching, tagging, diffing, and any other version-control
+operations. No Git action should proceed without clear, contextual
+guidance from the AI Partner when requested.
+
 ## Decision Heuristic
 
-When in doubt: **Does this action satisfy A-0 through A-10 simultaneously?**
+When in doubt: **Does this action satisfy A-0 through A-11 simultaneously?**
 If not, halt and alert the Director.
 
 ## MANDATORY CHANGELOG
@@ -87,3 +95,5 @@ If not, halt and alert the Director.
 | `v1.0.0` | 2026-04-16 | `release` | Initial axiom set. A-0 through A-6 defined. Decision heuristic established. |
 | `v1.1.0` | 2026-04-16 | `draft`   | Added Governance axioms: A-7 (E-DVCS Enforcement), A-8 (Contextual Economy $W_{ctx}$), A-9 (Canonical Output Topology), A-10 (Versioning Suffix Convention). Decision heuristic updated to span A-0 through A-10. |
 | `v1.2.0` | 2026-04-16 | `draft`   | Refactored A-4 to Dynamic Design (spectrum-based interaction modes). Refactored A-5 to reflect current invariant structure (`core/`, `onboarding/`, `backlog/`); covariant directories deferred to post-onboarding protocol. Removed references to legacy nomenclature and premature onboarding templates. |
+| `v1.3.0` | 2026-04-16 | `draft`   | Added A-11 (Git-Assistant): AI Partner must guide Human Orchestrator through all Git operations. Decision heuristic updated to span A-0 through A-11. |
+
