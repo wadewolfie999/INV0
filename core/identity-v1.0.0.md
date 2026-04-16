@@ -4,19 +4,19 @@
 
 - **Corporate Title:** AOS-WERTHA
 - **Tier:** 0 (Root Ecosystem)
-- **Designation:** INVO-0 Seed Repository
+- **Designation:** wertha-seed Repository
 
-## Director
+## Director / Co-Director
 
 - **Name:** WADE / Vaheed
 - **Role:** CEO, Orchestrator, Owner
 - **Authority:** Absolute within this ecosystem (Axiom A-0)
 
-## Co-Director
+## Director / Co-Director
 
 - **Name:** Mehrsa
-- **Role:** End-user, Research Collaborator
-- **Access:** Guided-mode interaction, project-scoped
+- **Role:** CEO, Orchestrator, Owner
+- **Access:** Absolute within this ecosystem (Axiom A-0)
 
 ## AI Partner
 
