@@ -36,7 +36,11 @@ The system serves a spectrum of interaction modes given user interaction, rangin
 
 The repository is partitioned into:
 - $\mathcal{I}$ (invariant): `core/`, `onboarding/`, `backlog/`
-- $\mathcal{C}(u)$ (covariant): User-scoped directories to be defined post-onboarding protocol design.
+- $\mathcal{C}(u)$ (covariant): User-scoped directories whose canonical
+  topology is defined exclusively by the Onboarding Wizard
+  (`onboarding/wizard-spec-v1.0.0.md`). The wizard is the sole authority
+  for $\mathcal{C}(u)$ structure; no other process or artifact may define
+  or override this topology without Director authorization.
 
 Changes to $\mathcal{I}$ require Director authorization.
 Changes to $\mathcal{C}(u)$ are user-scoped and routine.
@@ -96,4 +100,5 @@ If not, halt and alert the Director.
 | `v1.1.0` | 2026-04-16 | `draft`   | Added Governance axioms: A-7 (E-DVCS Enforcement), A-8 (Contextual Economy $W_{ctx}$), A-9 (Canonical Output Topology), A-10 (Versioning Suffix Convention). Decision heuristic updated to span A-0 through A-10. |
 | `v1.2.0` | 2026-04-16 | `draft`   | Refactored A-4 to Dynamic Design (spectrum-based interaction modes). Refactored A-5 to reflect current invariant structure (`core/`, `onboarding/`, `backlog/`); covariant directories deferred to post-onboarding protocol. Removed references to legacy nomenclature and premature onboarding templates. |
 | `v1.3.0` | 2026-04-16 | `draft`   | Added A-11 (Git-Assistant): AI Partner must guide Human Orchestrator through all Git operations. Decision heuristic updated to span A-0 through A-11. |
+| `v1.4.0` | 2026-04-17 | `draft`   | Codified Onboarding Wizard as canonical $\mathcal{C}(u)$ topology authority in A-5. Replaced deferred definition with explicit delegation to `onboarding/wizard-spec-v1.0.0.md`. No other axiom altered. |
 
