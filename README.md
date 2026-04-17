@@ -9,42 +9,53 @@ It holds the axioms, identity, onboarding protocols, and state management
 that remain constant across all users and projects.
 
 Each user gets a **Covariant Brain** ($\mathcal{C}(u)$) — a profile + project
-configuration generated from the invariant core via onboarding. The architecture
-is expressed as:
+configuration generated from the invariant core via the Onboarding Wizard
+(`onboarding/wizard-spec-v1.0.0.md`). The architecture is expressed as:
 
 $$\text{Ecosystem} = \mathcal{I} \oplus \mathcal{C}(u)$$
 
+The Onboarding Wizard is the **sole canonical authority** for $\mathcal{C}(u)$
+topology (per A-5, `core/axioms-v1.4.0.md`).
+
 ## Constraints
 
-| Constraint   | Value                                      |
-|--------------|--------------------------------------------|
-| Network      | INTRANET — air-gapped, local-only          |
-| Persistence  | Git-backed (Vector 2)                      |
-| Agent Model  | Identity Collapse (Vector 6) — single agent|
-| Users        | Vaheed (expert), Mehrsa (guided)           |
+| Constraint   | Axiom | Value                                      |
+|--------------|-------|--------------------------------------------|
+| Network      | A-1   | INTRANET — air-gapped, local-only          |
+| Persistence  | A-3   | Git-backed — all state versioned via Git   |
+| Agent Model  | A-2   | Identity Collapse — single AI agent        |
+| Users        | —     | Vaheed (expert), Mehrsa (guided)           |
 
 ## Quickstart
 
 1. Clone or init this repo locally.
-2. Read `core/axioms-v1.0.0.md` for non-negotiable rules.
+2. Read `core/axioms-v1.4.0.md` for non-negotiable rules.
 3. Read `core/identity-v1.0.0.md` for system identity and roles.
-4. To onboard a new user, copy `onboarding/templates/new-user.md` into `profiles/<name>.md` and fill it in.
-5. Register a project under `projects/<project-name>/README.md`.
-6. Checkpoints go in `state/checkpoints/` using CSM/VRL format.
+4. Run the Onboarding Wizard (`onboarding/wizard-spec-v1.0.0.md`)
+   to generate your $\mathcal{C}(u)$ topology and user profile.
 
 ## Structure
 
-- `core/` — Axioms and identity (the $\mathcal{I}$ layer).
-- `profiles/` — Per-user covariant brains ($\mathcal{C}(u)$).
-- `projects/` — Active initiatives, one directory each.
-- `state/` — Checkpoints (CSM/VRL) and thread log.
+### Invariant Layer ($\mathcal{I}$) — Director-authorized changes only
+
+- `core/` — Axioms and identity.
+- `onboarding/` — Wizard spec and onboarding protocols.
 - `backlog/` — Deferred work, serialized and governed.
-- `onboarding/` — Templates for generating new $\mathcal{C}(u)$ instances.
-- `docs/` — Optional deep documentation.
+
+### Covariant Layer ($\mathcal{C}(u)$) — User-scoped, wizard-generated
+
+Directory topology is defined per-user by the Onboarding Wizard.
+No fixed directory structure is presumed; see `onboarding/wizard-spec-v1.0.0.md`
+for the canonical generation schema.
+
+### Optional
+
+- `docs/` — Deep documentation (if needed).
 
 ## MANDATORY CHANGELOG
 
 | Version   | Date       | State     | Description                                                                 |
 |-----------|------------|-----------|-----------------------------------------------------------------------------|
 | `v1.0.0`  | 2026-04-16 | `release` | Initial seed repository. Defined $\mathcal{I} \oplus \mathcal{C}(u)$ architecture, constraints, and structure. |
+| `v1.1.0`  | 2026-04-17 | `draft`   | Aligned with axioms v1.4.0. Delegated $\mathcal{C}(u)$ topology to Onboarding Wizard (A-5). Replaced legacy Vector nomenclature with axiom IDs. Removed premature fixed-directory assumptions from Quickstart and Structure. |
 
