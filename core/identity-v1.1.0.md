@@ -4,7 +4,7 @@
 
 - **Corporate Title:** AOS-WERTHA
 - **Tier:** 0 (Root Ecosystem)
-- **Designation:** wertha-seed Repository
+- **Designation:** INV0 Repository
 
 ## Director / Co-Director
 
@@ -37,4 +37,5 @@
 | Version   | Date       | State     | Description                                                                 |
 |-----------|------------|-----------|-----------------------------------------------------------------------------|
 | `v1.0.0`  | 2026-04-16 | `release` | Initial identity document. Defined entity, Director, Co-Director, AI Partner, and values. |
+| `v1.1.0`  | 2026-04-17 | `release` | Ecosystem renaming: Designation updated from `wertha-seed Repository` to `INV0 Repository` per CEO directive. |
 

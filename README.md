@@ -1,16 +1,16 @@
-# WERTHA Seed
+# INV0
 
 A locally-operated, Git-backed personal orchestration layer.
 
 ## What This Is
 
-This repository is the **Invariant Core** ($\mathcal{I}$) of the WERTHA ecosystem.
+This repository is the **Invariant Core** ($\mathcal{I}$) of the `INV0` ecosystem.
 It holds the axioms, identity, onboarding protocols, and state management
 that remain constant across all users and projects.
 
 Each user gets a **Covariant Brain** ($\mathcal{C}(u)$) — a profile + project
 configuration generated from the invariant core via the Onboarding Wizard
-(`onboarding/wizard-spec-v1.0.0.md`). The architecture is expressed as:
+(`onboarding/wizard-spec-v1.2.0.md`). The architecture is expressed as:
 
 $$\text{Ecosystem} = \mathcal{I} \oplus \mathcal{C}(u)$$
 

@@ -1,11 +1,13 @@
-# Backlog Registry — WERTHA-seed
-> Canonical registry of all deferred work streams, serialized by architectural layer. 
+# Backlog Registry — INV0
+
+> Canonical registry of all deferred work streams, serialized by architectural layer.
 > Single source of truth for quarantined scope outside the active POC.
 
 ---
 
 ### §1 — Invariant Layer Deferrals
-> Items that affect the core system ($\mathcal{I}$) and its scaling mechanisms. 
+
+> Items that affect the core system ($\mathcal{I}$) and its scaling mechanisms.
 > *Note: While this section generally tracks deferred items, `BL-I01` has been promoted to an active POC.*
 
 | ID | Project | Current State & Blueprint | Priority | Blocked By |
@@ -15,15 +17,17 @@
 ---
 
 ### §2 — Covariant Layer Deferrals
+
 > User-specific project implementations that belong inside a $\mathcal{C}(u)$ instance but are not part of current POC scope.
 
 | ID | Project | Owner | Last Known State | Module Health | Priority | Blocked By |
 |----|---------|-------|------------------|---------------|----------|------------|
-| `BL-C01` | Autonomous Trading Engine (C++/Python) | Vaheed | Post-Phase 17 complete. Snapshot: `SS-20260326-01`. Offline observability validated. Deterministic fault injection validated. Functionally mature but not integrated into WERTHA-seed project structure. | N/A — monolithic | Medium | $\mathcal{C}(\text{V})$ stabilization, project template migration. |
+| `BL-C01` | Autonomous Trading Engine (C++/Python) | Vaheed | Post-Phase 17 complete. Snapshot: `SS-20260326-01`. Offline observability validated. Deterministic fault injection validated. Functionally mature but not integrated into INV0 project structure. | N/A — monolithic | Medium | $\mathcal{C}(\text{V})$ stabilization, project template migration. |
 | `BL-C02` | Self-Hosted Web App | Vaheed | Fragmented. No unified deployment. Module-level breakdown below. | Mixed (see below) | Low | $\mathcal{C}(\text{V})$ stabilization, stack decision, module triage. |
 | `BL-C03` | Physics Research & Custom Instructions | Mehrsa / Vaheed | Scattered fragmented files (`.md`, `.txt`) across multiple devices. Domains: AdS/CFT, Black Hole Information Paradox, HEP-Phenom ML. Includes highly valuable but unfinished 'Research-Collaborator' persona instructions from `1-BOARDROOM/roster/`, not yet migrated under Identity Collapse. | N/A — pre-structured | Medium | $\mathcal{C}(\text{M})$ onboarding, thesis context ingestion, file consolidation across devices. |
 
 #### BL-C02 Module Health Breakdown
+
 | Module | Score | Notes |
 |--------|-------|-------|
 | Video-Chat | 6/10 | Functional but unpolished. Requires refactoring for standard deployment. |
@@ -33,6 +37,7 @@
 ---
 
 ### §3 — Retired / Archived
+
 > Scope permanently removed from the ecosystem.
 
 | ID | Project | Reason | Date Retired |
@@ -43,6 +48,7 @@
 ---
 
 ### §4 — ID Migration Reference
+
 > Mapping of `v1.0.0` flat IDs to layered semantic IDs (`v1.1.0+`).
 
 | Old ID | New ID | Notes |
@@ -62,3 +68,5 @@
 | `v1.0.0` | 2026-04-16 | `release`  | Initial backlog registry. Four active projects logged (BL-001 through BL-004). Two retired items archived. |
 | `v1.1.0` | 2026-04-16 | `release`  | Structural overhaul per CEO directive. Registry split into Invariant Layer (§1) and Covariant Layer (§2) sections. All placeholder states overwritten with precise last-known technical realities. BL-003 and BL-004 merged into BL-C03. New entry BL-I01 (Arbitrary User Scaling) added. ID migration table (§4) added for traceability. Module health sub-table added for BL-C02. |
 | `v1.2.0` | 2026-04-16 | `release`  | Promoted `BL-I01` to an active POC status and removed previous blockers. Renamed `BL-I01` to "Arbitrary **Project** Scaling (`onboarding-wizard`)". Integrated stringent architectural design constraints (Orchestrator Sovereignty, Single-Agent Executor, Deterministic Structure, Git-Native Output) and defined acceptance criteria via CEO simulation run. |
+| `v1.3.0` | 2026-04-17 | `release`  | Ecosystem renaming: all `WERTHA-seed` nomenclature replaced with `INV0` per CEO directive. No structural or semantic changes to backlog items. Registry title, `BL-C01` description updated to reflect new canonical project name. |
+
