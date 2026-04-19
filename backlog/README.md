@@ -27,4 +27,5 @@ for initiatives that are not currently active.
 | Version   | Date       | State     | Description                                                                 |
 |-----------|------------|-----------|-----------------------------------------------------------------------------|
 | `v1.0.0`  | 2026-04-16 | `release` | Initial backlog directory structure. Registry and governance rules defined. |
+| `v1.1.0`  | 2026-04-19 | `release` | Version sync with backlog-registry-v1.4.0. INV0 ecosystem alignment.        |
 
