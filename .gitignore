@@ -2,5 +2,5 @@
 *.tmp
 .DS_Store
 state/runtime/*
-reports/*
-governance/*
+.reports/*
+.governance/*
